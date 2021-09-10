@@ -1,5 +1,6 @@
 package com.example.demo.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 
@@ -10,4 +11,6 @@ import com.fasterxml.jackson.annotation.JsonTypeInfo;
 })
 public abstract class A {
     String x;
+    @JsonProperty("entityName")
+    abstract String getEntityName();
 }

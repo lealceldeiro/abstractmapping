@@ -26,4 +26,9 @@ public class C extends A {
     public void setX(String x) {
         this.x = x;
     }
+
+    @Override
+    String getEntityName() {
+        return "This is an entity of type C";
+    }
 }
